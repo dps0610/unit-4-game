@@ -10,9 +10,10 @@ var greenNumber = Math.floor(Math.random() * crystalNumberMax + crystalNumberMin
 var redNumber = Math.floor(Math.random() * crystalNumberMax + crystalNumberMin);
 var blueNumber = Math.floor(Math.random() * crystalNumberMax + crystalNumberMin);
 var purpleNumber = Math.floor(Math.random() * crystalNumberMax + crystalNumberMin);
+var randomNumber= 0
 
 function reset () {
-    var randomNumber = Math.floor((Math.random() * (randomNumberMax - randomNumberMin)) + randomNumberMin);
+    randomNumber = Math.floor((Math.random() * (randomNumberMax - randomNumberMin)) + randomNumberMin);
     $(".random-number").text(randomNumber);
     greenNumber = Math.floor(Math.random() * crystalNumberMax + crystalNumberMin);
     redNumber = Math.floor(Math.random() * crystalNumberMax + crystalNumberMin);
@@ -25,7 +26,7 @@ function reset () {
 
 $("document").ready(function(){
     //Generate a random number to be displayed to the player
-    var randomNumber = Math.floor((Math.random() * (randomNumberMax - randomNumberMin)) + randomNumberMin);
+    randomNumber = Math.floor((Math.random() * (randomNumberMax - randomNumberMin)) + randomNumberMin);
     console.log(randomNumber);
 
     $(".random-number").text(randomNumber);
