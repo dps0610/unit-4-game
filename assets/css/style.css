@@ -1,0 +1,17 @@
+body {
+    width: 960px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.paragraph {
+    border: solid 5px black;
+    margin-bottom: 20px;
+}
+
+
+
+.rocks {
+    height: 150px;
+    width: 150px;
+}

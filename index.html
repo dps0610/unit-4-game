@@ -7,13 +7,41 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 
-    <title>Document</title>
+    <title>Crystal Game</title>
 </head>
 <body>
     
-    
+    <h1>The Crystal Game</h1>
+
+    <div>
+      <div class="paragraph">
+        <p>A random number will be generated, and the crystals below will be assigned random values.
+        <br>
+        <br>
+        Your goal is to choose the correct combination of crystals to equal the number generated. Good luck!
+        </p>
+      </div>
+
+      <div>
+        <button class="crystals" id="blue-guy"><img class="rocks" src="assets/images/blue-zircon-crystal-gemstone-300x300.jpg"></button>
+        <button class="crystals" id="red-guy"><img class="rocks" src="assets/images/redguy.jpg"></button>
+        <button class="crystals" id="purple-guy"><img class="rocks" src="assets/images/purpleguy.jpg"></button>
+        <button class="crystals" id="green-guy"><img class="rocks" src="assets/images/greenguy.jpg"></button>
+      </div>
+
+      <div>
+        <h2>Number to reach: <span class="random-number"></span></h2>
+      </div>
+      <div>
+        <p>Your Number: <span class="your-score"></span></p>
+        <p>Wins: <span class="wins"></span></p>
+        <p>Losses: <span class="losses"></span></p>
+      </div>
+
+    </div>
 
 </body>
 </html>
